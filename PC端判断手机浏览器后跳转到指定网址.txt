@@ -1,0 +1,35 @@
+版本一：
+<script>
+function is_pc(){
+    var os = ["Android","iPhone","Windows Phone","iPod","BlackBerry","MeeGo","SymbianOS"];  // 其他类型的移动操作系统类型，自行添加
+    var info = navigator.userAgent;
+    var len = os.length;
+    for (var i = 0; i < len; i++) {
+        if (info.indexOf(os[i]) > 0){
+            return false;
+        }
+    }
+    return true;
+}
+
+// 如果是移动设备就直接跳转到手机网站页面
+if(!is_pc()){
+	window.location.href="移动端连接";
+}
+</script>
+
+__________________________
+
+版本二：
+<script>
+var IsPC = function() {
+	var userAgentInfo = navigator.userAgent,
+	    Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"],
+	    flag = false;
+	for (var v = 0; v < Agents.length; v++) {
+		if (userAgentInfo.indexOf(Agents[v]) > 0) { 
+			window.location.href = "http://up.qq.com/2016/m/";
+		}
+	}
+}();
+</script>

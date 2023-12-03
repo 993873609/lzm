@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="gbk">
+    <meta name="robots" content="all" />
+    <meta name="Copyright" content="Tencent" />
+    <meta name="author" content="Tencent-CP" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="format-detection" content="telephone=no" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>专题主题（标题）- 产品中文全称官方网站 - 腾讯游戏</title>
+    <!-- 页面设计：cp | 页面制作：cp | 创建：xxxx-xx-xx -->
+
+    <script type="text/javascript" charset="utf-8">
+        function adaptVP(a){function c(){var c,d;return b.uWidth=a.uWidth?a.uWidth:640,b.dWidth=a.dWidth?a.dWidth:window.screen.width||window.screen.availWidth,b.ratio=window.devicePixelRatio?window.devicePixelRatio:1,b.userAgent=navigator.userAgent,b.bConsole=a.bConsole?a.bConsole:!1,a.mode?(b.mode=a.mode,void 0):(c=b.userAgent.match(/Android/i),c&&(b.mode="android-2.2",d=b.userAgent.match(/Android\s(\d+.\d+)/i),d&&(d=parseFloat(d[1])),2.2==d||2.3==d?b.mode="android-2.2":4.4>d?b.mode="android-dpi":d>=4.4&&(b.mode=b.dWidth>b.uWidth?"android-dpi":"android-scale")),void 0)}function d(){var e,f,g,h,c="",d=!1;switch(b.mode){case"apple":c="width="+b.uWidth+", user-scalable=no";break;case"android-2.2":a.dWidth||(b.dWidth=2==b.ratio?720:1.5==b.ratio?480:1==b.ratio?320:.75==b.ratio?240:480),e=window.screen.width||window.screen.availWidth,320==e?b.dWidth=b.ratio*e:640>e&&(b.dWidth=e),b.mode="android-dpi",d=!0;case"android-dpi":f=160*b.uWidth/b.dWidth*b.ratio,c="target-densitydpi="+f+", width="+b.uWidth+", user-scalable=no",d&&(b.mode="android-2.2");break;case"android-scale":c="width="+b.uWidth+", user-scalable=no"}g=document.querySelector("meta[name='viewport']")||document.createElement("meta"),g.name="viewport",g.content=c,h=document.getElementsByTagName("head"),h.length>0&&h[0].appendChild(g)}function e(){var a="";for(key in b)a+=key+":"+b[key]+"; ";alert(a)}if(a){var b={uWidth:0,dWidth:0,ratio:1,mode:"apple",userAgent:null,bConsole:!1};c(),d(),b.bConsole&&e()}}
+        adaptVP({uWidth:640});
+    </script>
+    <style>
+        /* reset */
+        *{margin:0; padding:0;border:0;}
+        img{vertical-align:middle;border: none;padding: 0;margin:0;}
+        ul,ol,dl{list-style:none;}
+        html, body{height: 100%;}
+        a{text-decoration:none}
+        a:hover{text-decoration:none}
+        a, button, input {-webkit-tap-highlight-color:rgba(255,0,0,0);}
+        body{ margin: 0 auto; width: 100%; height: 100%; background:#000; font-size: 24px; line-height:1.5; color: #000; -webkit-user-select:none; user-select:none;}
+
+        /* S 动画音乐按钮 */
+        .h-audio { position: absolute; width: 70px; height: 70px; top: 0; right: 0;z-index: 999; }
+        .h-wave { position: absolute; bottom: 9px; left: 0; right: 0; border-bottom: 10px solid transparent; text-align: center; overflow: hidden;color: #fff }
+        .h-wave > i { display: inline-block;width: 3px;margin-right: 3px; border-top: 5px solid; -webkit-transform-origin: bottom center; transform-origin: bottom center }
+        .h-wave.active > i:nth-of-type(1) { -webkit-animation: waveAudio .66s ease-in infinite; animation: waveAudio .66s ease-in infinite }
+        .h-wave.active > i:nth-of-type(2) { -webkit-animation: waveAudio 1s .2s ease-out infinite; animation: waveAudio 1s .2s ease-out infinite }
+        .h-wave.active > i:nth-of-type(3) { -webkit-animation: waveAudio .72s linear infinite; animation: waveAudio .72s linear infinite }
+        .h-wave.active > i:nth-of-type(4) { -webkit-animation: waveAudio .63s .3s ease-in-out infinite; animation: waveAudio .63s .3s ease-in-out infinite }
+        .h-wave.active > i:nth-of-type(5) { -webkit-animation: waveAudio 1.2s infinite; animation: waveAudio 1.2s infinite }
+        .h-wave.active > i:nth-of-type(6) { -webkit-animation: waveAudio .9s ease-in infinite; animation: waveAudio .9s ease-in infinite; -webkit-transform: scaleY(.9); transform: scaleY(.9) }
+        .h-out { position: absolute; color: transparent }
+
+        @-webkit-keyframes waveAudio {
+            0% { border-top-width: 2px }
+            50% { border-top-width: 24px }
+            100% { border-top-width: 3px }
+        }
+        @keyframes waveAudio {
+            0% { border-top-width: 2px }
+            50% { border-top-width: 24px }
+            100% { border-top-width: 3px }
+        }
+        /* E 动画音乐按钮 */
+    </style>
+</head>
+<body>
+
+<!-- S 动画音乐按钮 -->
+<div class="h-audio">
+    <a href="javascript:" id="hAudioToggle" class="h-wave active">
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+        <span class="h-out"></span>
+    </a>
+    <audio id="hAudioBg" src="ossweb-img/bgm.mp3" loop="" preload="auto"></audio>
+</div>
+<!-- E 动画音乐按钮 -->
+
+<script src="http://ossweb-img.qq.com/images/js/zepto/zepto.min.js"></script>
+<script>
+    //动画音乐按钮事件
+    $('#hAudioToggle').click(function () {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $('#hAudioBg')[0].play();
+        }else {
+            $('#hAudioBg')[0].pause();
+        }
+    })
+</script>
+</body>
+</html>

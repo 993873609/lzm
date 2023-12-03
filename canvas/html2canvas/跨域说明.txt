@@ -1,0 +1,8 @@
+var content = document.querySelector("#scene");
+html2canvas(content,{
+        useCORS: true,
+}).then(function (canvas) {
+        var img = Canvas2Image.convertToJPEG(canvas,canvas.width,canvas.height);
+});
+
+有跨域图片源，添加useCORS: true属性，该属性不要与proxy共存
